@@ -28,11 +28,9 @@ if [ $? -eq 0 ]; then
   rm -rf ~/.config/tmux/tmux.conf ~/.config/nvim ~/.config/starship.toml ~/.local/share/nvim/ ~/.cache/nvim/ ~/.config/ghostty/config
 
   cd "$REPO_NAME"
-  stow zshrc
   stow ghostty
   stow tmux
   stow nvim
-  stow starship
 else
   echo "Failed to clone the repository."
   exit 1
